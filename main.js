@@ -124,7 +124,6 @@ function sortBy(property) {
   todoItems.forEach((element) => {
     let input = document.createElement("input");
     input.type = "checkbox";
-    console.log(element.checked);
     input.checked = element.checked;
     input.setAttribute("class", "checkbox");
     let newAddedTask = document.createElement("li");
