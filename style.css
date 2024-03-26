@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+html, body {
+    min-height: 100dvh;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #68cdcd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  h2, #input-container, #sorting, #modify-tasklist {
+    text-align: center;
+  }
+
+  #input-container > * {
+    margin: 10px 5px;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  ul > * {
+    padding: 10px;
+    /* text-align: center; */
+  }
+
+  li {
+    list-style: none;
+    text-align: left;
+    width: 80vw;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+  
+  }
+
+  li > input {
+    margin-right: 10px;
+  }
+
+  .complete {
+    color: rgb(8, 131, 49);
+    font-weight: 600;
+    text-decoration: line-through;
+  }
+
+  hr {
+    margin: 0;
+    padding: 0px;
+    border-top: 1px solid #306d6d;
+  }
+  input, select, button {
+    border-radius: 5px;
+  }
+
+  button {
+    margin: 5px;
+  }
+
+  .delete-buttons {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  }
+
+  .delete-buttons:hover {
+    cursor: pointer;
+    background-color: #7fb9b9;
+  }

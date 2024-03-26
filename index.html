@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-to-do-list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Todo App</h2>
+
+      <div id="input-container">
+        <input type="text" id="inputTask" />
+        <button id="addTask">+</button> <br />
+        <strong id="warning-no-input"></strong>
+      </div>
+
+      <div id="modify-tasklist">
+        <button id="remove-last-task" class="delete-buttons">
+          Remove Last Task
+        </button>
+        <button id="remove-completed-tasks" class="delete-buttons">
+          Remove Completed Tasks
+        </button>
+        <button id="remove-all-tasks" class="delete-buttons">
+          Clear the Task List
+        </button>
+      </div>
+
+      <div id="sorting">
+        <label for="tasks">Sort by:</label>
+        <select id="tasks" name="tasks">
+          <option value="id">Older tasks first</option>
+          <option value="id-reverse">New tasks first</option>
+          <option value="text">Task name</option>
+          <option value="checked">Pending tasks first</option>
+        </select>
+      </div>
+
+      <div id="lists-container">
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
